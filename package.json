@@ -1,0 +1,20 @@
+{
+  "name": "Ravn-Challenge-V2-Effren-Anthony-Pena-Sanchez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EffrenAnthony/Ravn-Challenge-V2-Effren-Anthony-Pena-Sanchez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EffrenAnthony/Ravn-Challenge-V2-Effren-Anthony-Pena-Sanchez/issues"
+  },
+  "homepage": "https://github.com/EffrenAnthony/Ravn-Challenge-V2-Effren-Anthony-Pena-Sanchez#readme"
+}
