@@ -1,9 +1,15 @@
 import React from 'react'
+import { PeopleInfo } from './components/PeopleInfo'
+import { Layout } from './containers/Layout'
+import { GlobalStyles } from './styles/GlobalStyles'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <GlobalStyles />
+      <Layout>
+        <PeopleInfo />
+      </Layout>
     </div>
   )
 }
