@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -11,7 +11,7 @@ export const Title = styled.h1`
   color: #333333;
 `
 
-export const KeyTitle = styled.h1`
+export const KeyTitle = styled.h2`
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
