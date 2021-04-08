@@ -34,8 +34,13 @@ Ravn-Challenge-V2 is a challenge project of the RAVN company developing for the 
   ```
 
 ## Application Flow
-Workflow start fetching the endpoint
-![Alt text](./principalView.png)
+
+- Application start fetching the endpoint with Apollo Cli and showing every character in the sidebar.
+![Alt text](./readmeFiles/fetchData.png)
+- By clicking on any item on the sidebar, the app will show the detail of that item in the right side by setting the item in "People Info" component usin React Context
+![Alt text](./readmeFiles/showPerson.png)
+- Finally the app flow could be expressed like this
+![Alt text](./readmeFiles/appFlow.png)
 
 ## Dependencies & Technologies
 
