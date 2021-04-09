@@ -9,15 +9,14 @@ export const ListTile = styled.div`
   height: 100vmin;
   overflow-y: scroll;
 `
+
 export const ListTileItem = styled.button`
   display: flex;
   width: 100%;
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px 16px 0px;
-  margin-left: 14.8px;
-  height: 69px;
+  padding-right: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-left: 0px;
   &:hover {
@@ -27,6 +26,9 @@ export const ListTileItem = styled.button`
     outline:0;
   }
   
+`
+export const ItemInfoContainer = styled.div`
+  margin: 16px;
 `
 export const ItemSubTitle = styled.p`
   color: #828282;

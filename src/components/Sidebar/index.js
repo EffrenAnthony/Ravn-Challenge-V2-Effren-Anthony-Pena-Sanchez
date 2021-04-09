@@ -4,7 +4,7 @@ import { ALL_PEOPLE } from '../../graphQL/Queries'
 import { ErrorRes } from '../../common/ErrorRes'
 import { LoadingRes } from '../../common/LoadingRes'
 import { MdNavigateNext } from 'react-icons/md'
-import { SidebarContainer, ListTile, ListTileItem, ItemSubTitle } from './styles'
+import { SidebarContainer, ListTile, ListTileItem, ItemInfoContainer, ItemSubTitle } from './styles'
 import { Title } from '../../styles/CommonStyles'
 import { useAllPeopleContext } from '../../context/peopleContext'
 
@@ -49,12 +49,12 @@ export const Sidebar = () => {
           {
             data.allPeople.edges.map(({ node }) => (
               <ListTileItem onClick={() => handlePerson(node)} key={node.name}>
-                <div>
+                <ItemInfoContainer>
                   <Title>{node.name}</Title>
                   <ItemSubTitle>
                     {node.species != null ? node.species.name : 'Human'} from {node.homeworld != null ? node.homeworld.name : 'Human'}
                   </ItemSubTitle>
-                </div>
+                </ItemInfoContainer>
                 <MdNavigateNext size={17} />
               </ListTileItem>
             ))

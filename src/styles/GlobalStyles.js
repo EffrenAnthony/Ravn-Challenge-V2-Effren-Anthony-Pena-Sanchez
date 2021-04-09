@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
 
   *, *:before, *:after {

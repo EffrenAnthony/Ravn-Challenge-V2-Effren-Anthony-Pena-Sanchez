@@ -12,9 +12,13 @@ Ravn-Challenge-V2 is a challenge project of the RAVN company developing for the 
     ```
 
 3. Once installed all dependencies, run one of the next commands.
-- Run in development mode
+- Run local in development mode
   ```bash
   npm run dev
+  ```
+  Open your browser in  
+  ```bash
+  http://localhost:3000/
   ```
 - Compile in production mode 
   ```bash
@@ -28,6 +32,12 @@ Ravn-Challenge-V2 is a challenge project of the RAVN company developing for the 
   ```bash
   npm run vercel-build
   ```
+  Make sure you have `vercel cli` installed and have an account of `vercel.com`. If not, create an account in [https://vercel.com/](https://vercel.com/)
+  and install `vercel cli` with this command
+  ```bash
+  npm i -g vercel
+  ```
+
 - Check eslint errors
   ```bash
   npm run lint
@@ -37,7 +47,7 @@ Ravn-Challenge-V2 is a challenge project of the RAVN company developing for the 
 
 - Application start fetching the endpoint with Apollo Cli and showing every character in the sidebar.
 ![Alt text](./readmeFiles/fetchData.png)
-- By clicking on any item on the sidebar, the app will show the detail of that item in the right side by setting the item in "People Info" component usin React Context
+- By clicking on any item on the sidebar, the app will show the detail of that item in the right side by setting the item in "People Info" component using React Context
 ![Alt text](./readmeFiles/showPerson.png)
 - Finally the app flow could be expressed like this
 ![Alt text](./readmeFiles/appFlow.png)
@@ -49,6 +59,40 @@ Ravn-Challenge-V2 is a challenge project of the RAVN company developing for the 
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/graphql?label=graphql)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/styled-components?label=styled-components)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/react-icons?label=react-icons)
+
+## Configurations
+- ### Webpack
+  To change configurations about babel, file extensions, compilation of the project or change the port, go to `webpack.json` file.
+
+- ### Eslint
+  This project is using `Estandard JS` as slint configuration, to change or disbale, run
+  ```bash
+  npm uninstall standard
+  ```
+
+  and delete slint configurations in the `package.json` file including the script slint
+  ```json
+  //...
+  "scripts": {
+    "lint": "standard",
+  },
+  //...
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
+  }
+  ```
+
+
+
+
 
 ## Licence
 [MIT](https://choosealicense.com/licenses/mit/)

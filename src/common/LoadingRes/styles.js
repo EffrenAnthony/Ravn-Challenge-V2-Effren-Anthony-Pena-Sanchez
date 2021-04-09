@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const LoadingLine = styled.p`
+export const LoadingLine = styled.h2`
   color: #828282;
   font-size: 17px;  
   font-weight: 700;
@@ -9,7 +9,7 @@ export const LoadingLine = styled.p`
 `
 
 export const LoadingContainer = styled.div`
-  margin-top: 16px;
+  margin: 16px;
   display:flex;
   justify-content: center;
 

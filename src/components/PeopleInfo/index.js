@@ -37,7 +37,7 @@ export const PeopleInfo = () => {
               </InfoTitleContainer>
               {
                 person.vehicleConnection.edges.map(({ node }) => (
-                  <InfoItem key={node.id}>
+                  <InfoItem key={node.name}>
                     <KeyTitle>{node.name}</KeyTitle>
                   </InfoItem>
                 ))
