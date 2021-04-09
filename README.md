@@ -65,7 +65,7 @@ Ravn-Challenge-V2 is a challenge project of the RAVN company developing for the 
   To change configurations about babel, file extensions, compilation of the project or change the port, go to `webpack.json` file.
 
 - ### Eslint
-  This project use `Estandard JS` as slint configuration, to change or disabale, run
+  This project use `Estandard JS` as slint configuration, to change or disable, run
   ```bash
   npm uninstall standard
   ```
